@@ -1,0 +1,19 @@
+@use '~attractions/_variables';
+@use '~attractions/_mixins';
+@use '~attractions/_appearances';
+
+.something {
+  color: variables.$main;
+
+  // See the source code to discover these internal mixins:
+  @include appearances.button;
+  @include mixins.show-on-focus;
+}
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
